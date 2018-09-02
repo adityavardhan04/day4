@@ -1,0 +1,24 @@
+3.Write function to compute the sum of n numbers
+#include<stdio.h>
+int sum(int a,int b);
+void main()
+{
+	int a,b,z;
+	printf("\n enter the first and last number:");
+    scanf("%d%d",&a,&b);
+	
+	z=sum(a,b);
+    printf("\nsum=%d",z);
+	
+}
+ 
+int sum(int a,int b)
+{
+	int sum=0;
+	while(a<=b)
+	{
+    	sum=sum+a;
+    	a++;
+	}
+	return sum;
+}
