@@ -1,26 +1,28 @@
 2. Write function to get n numbers from the user.
- 
-#include <stdio.h>
-void printNaturalNumbers(int lowerLimit, int upperLimit);
-int main()
+
+#include<stdio.h>
+int number(int a);
+void main()
 {
-    int lowerLimit, upperLimit;    
-    printf("Enter lower limit: ");
-    scanf("%d", &lowerLimit);
-    printf("Enter upper limit: ");
-    scanf("%d", &upperLimit);
- 
-    printf("All natural numbers from %d to %d are: ", lowerLimit, upperLimit);
-    printNaturalNumbers(lowerLimit, upperLimit);
-    
-    return 0;
+    int n;
+
+    number(n);
 }
- 
-void printNaturalNumbers(int lowerLimit, int upperLimit)
+
+int number(int a)
 {
-    if(lowerLimit > upperLimit)
-        return;
+    int i,b[10],n;
+    printf("\n enter the size of the numbers");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&b[i]);
+    }
     
-    printf("%d, ", lowerLimit);
-    printNaturalNumbers(lowerLimit + 1, upperLimit);
+    printf("\n the elements are:");
+    for(i=0;i<n;i++)
+    {
+        printf("%d\t",b[i]);
+    }
+    
 }
