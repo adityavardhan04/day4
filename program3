@@ -1,4 +1,5 @@
 3.Write function to compute the sum of n numbers
+
 #include<stdio.h>
 int sum(int a,int b);
 void main()
