@@ -8,13 +8,13 @@ void main()
     printf("\n enter the size of the array:\n");
     scanf("%d",&n);
     printf("\n enter the elements of the array:\n");
-    for(i=0;i<=n-1;i++)
+    for(i=0;i<n;i++)
     {
         scanf("%d",&m[i]);
     }
 
     printf("\n the sum of square root of entered elements are:");
-    for(i=0;i<=n-1;i++)
+    for(i=0;i<n;i++)
     {
         sum=sum+sqrt(m[i]);
     }
